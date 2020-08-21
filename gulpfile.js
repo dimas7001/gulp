@@ -1,14 +1,10 @@
 const gulp = require('gulp');
 const git = require('gulp-git'); //before using install gulp-git || npm install gulp-git --save-dev
 
-const branchName = 'branchName';
-const repo = 'https://github.com/dimas7001/test.git';
-const path = './files/*';
-/*
 const repo = ' '; //your repository
 const branchName = ' '; //the name of the branch on which will be pushed the changes
 const path = ' '; //path to the files that will be changed
-*/
+
 gulp.task('init', function(){ //init local repo
     return git.init(function (err) {
       if (err) throw err;
